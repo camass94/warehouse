@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+@@include('../include/head.html', { 
+    "title": "[티키타카]로그인"
+})
+@@loop('../include/css.html', [
+    {"cssname": "main"}
+])
+</head>
+<body>
+<div class="main">
+    <h1 class="main__h1">우리끼리 LOGIN</h1>
+    <div class="main__wrap">
+    </div>
+</div>
+@@loop('../include/script.html', [
+    {"filename": "index"}
+])
+</body>
+</html>

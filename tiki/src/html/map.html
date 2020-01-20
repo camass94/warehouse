@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+@@include('include/head.html', { 
+    "title": "티키타카입니다."
+})
+@@loop('include/css.html', [
+    {"cssname": "map"}
+])
+</head>
+<body>
+<div class="main">
+    <h1 class="main__h1">TIKITAKA MAP</h1>
+    <div class="map map__wrap">
+        <ul class="map__lists">
+            <!-- 
+            <li class="map__list"> 
+                <span class="map__title"></span>
+                <a href="#" class="map__link"></a>
+                <div class="map__desc"></div>
+            -->
+        </ul>
+    </div>
+</div>
+@@loop('include/script.html', [
+    {"filename": "map"}
+])
+</body>
+</html>
