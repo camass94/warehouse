@@ -1,0 +1,22 @@
+# 카테고리
+1. Intro(index)
+    - 스플래쉬(intro)
+    - 로그인(login)
+    - App정보(appinfo)
+2. 게임(game)
+    - 메인(main)
+    - 리스트(list)
+    - 상세(detail)
+    - 데이터(data)
+3. 클럽(club)
+    - 메인(main)
+    - 리스트(list)
+    - 상세(detail)
+4. 구장(field)
+    - 메인(main)
+    - 리스트(list)
+    - 상세(detail)
+5. 이용자홈(mypage)
+    - 메인(main)
+    
+
