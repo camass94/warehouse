@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+@@include('./include/head.html', { 
+    "title": "티키타카입니다."
+})
+@@loop('./include/css.html', [
+    {"cssname": "common"}
+])
+</head>
+<body>
+<div class="main">
+    <h1 class="main__h1">우리끼리 INDEX</h1>
+    <div class="main__wrap">
+        <ul>
+            <li><a href="map.html">페이지 링크 목록 바로가기</a></li>
+        </ul>
+    </div>
+</div>
+
+@@loop('./include/script.html', [
+    {"filename": "common"}
+])
+</body>
+</html>

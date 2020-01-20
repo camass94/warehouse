@@ -1,0 +1,16 @@
+[
+  "club/club_detail.html",
+  "club/club_list.html",
+  "club/club_main.html",
+  "common/appinfo.html",
+  "common/intro.html",
+  "common/login.html",
+  "field/filed_detail.html",
+  "field/filed_list.html",
+  "field/filed_main.html",
+  "game/game_data.html",
+  "game/game_detail.html",
+  "game/game_list.html",
+  "game/game_main.html",
+  "mypage/mypage_main.html"
+]

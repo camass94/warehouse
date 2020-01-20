@@ -21,7 +21,7 @@ const devsrc = 'src',
             "js" : devsrc + '/js/*.js',
             "css" : devsrc + '/css/*.scss',
             "img" : devsrc + '/images/*+(png|jpg|gif)',
-            "html" : devsrc + '/html/page/*.html'
+            "html" : devsrc + '/html/page/*/*.html'
         },
         "pub" : {
             "js" : pubsrc+'/js',
@@ -59,8 +59,8 @@ gulp.task('filemap', () => {
 });
     
 gulp.task('html', () => {
-    gulp.src([paths.src.html, devsrc + '/html/*.html']) //개발코드 위치
-    .pipe(fileinclude())
+    gulp.src([devsrc + '/html/*.html', paths.src.html]) //개발코드 위치
+    .pipe(fileinclude({ basepath: devsrc + '/html' }))
     .pipe(gulp.dest(paths.pub.html)) //복사해서 이동시킴
     .pipe(connect.reload()); //변경되면 실시간 새로고침
 });
@@ -92,4 +92,4 @@ gulp.task('watch', () => {
 });
 
 gulp.task('default', ['server', 'css', 'html', 'imgmin', 'js', 'filemap', 'watch']);
-gulp.task('dev', ['clean', 'css', 'html', 'js', 'imgmin', 'filemap', 'watch']);
+gulp.task('dev', ['clean', 'css', 'html', 'js', 'imgmin', 'filemap']);
